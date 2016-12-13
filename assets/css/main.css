@@ -564,7 +564,6 @@
 		-webkit-transition: color 0.2s ease-in-out;
 		-ms-transition: color 0.2s ease-in-out;
 		transition: color 0.2s ease-in-out;
-		color: #98c593;
 	}
 
 	sub {
@@ -598,6 +597,7 @@
 
 	.box {
 		background: #ffffff;
+		opacity: 0.8;
 		color: #39454b;
 		padding: 2em;
 	}
@@ -618,7 +618,7 @@
 
 				.box.style2 {
 					padding: 1.5em 1.25em 1.5em 1.25em;
-					background-color: rgba(255, 255, 255, 0.9);
+					background-color: rgba(255, 255, 255, 0.8);
 				}
 
 		}
@@ -892,12 +892,18 @@
 			font-style: normal;
 			font-weight: normal;
 			line-height: 1;
+			color: #5e42a6;
 			-webkit-font-smoothing: antialiased;
 			-moz-osx-font-smoothing: grayscale;
 		}
 
 		.icon > .label {
 			display: none;
+		}
+
+		#email {
+			font-size: 1.2em;
+			color: #5e42a6;
 		}
 
 /* Image */
@@ -1265,7 +1271,7 @@
 		-webkit-flex-wrap: wrap;
 		-ms-flex-wrap: wrap;
 		flex-wrap: wrap;
-		width: 45em;
+		width: 55em;
 		max-width: 100%;
 		margin: 0 auto 2em auto;
 	}
@@ -1287,6 +1293,14 @@
 			.gallery article .image {
 				margin: 0;
 				display: block;
+			}
+
+			.gallery article .image:hover {
+				opacity: 0.4;
+			}
+
+			#gallery-2, #gallery-3, #gallery-6 {
+				background: rgb(249,249,255);
 			}
 
 			.gallery article:nth-last-child(1n) {
@@ -1670,10 +1684,11 @@
 		left: 0;
 		top: 0;
 		width: 100%;
-		background: rgba(255, 255, 255, 0.95);
+		background: transparent;
 		height: 3em;
 		line-height: 3em;
-		box-shadow: 0 0 0.15em 0 rgba(0, 0, 0, 0.1);
+		color: rgb(249,249,255);
+		/*box-shadow: 0 0 0.15em 0 rgba(0, 0, 0, 0.1);*/
 	}
 
 		#header h1 {
@@ -1704,7 +1719,7 @@
 				#header nav ul li {
 					display: inline-block;
 					margin-left: 0.5em;
-					font-size: 0.9em;
+					font-size: 1.2em;
 				}
 
 					#header nav ul li a {
@@ -1744,13 +1759,13 @@
 		}
 
 	body {
-		padding-top: 3em;
+		/*padding-top: 3em;*/
 	}
 
 		@media screen and (max-width: 736px) {
 
 			body {
-				padding-top: 2.5em;
+				/*padding-top: 2.5em;*/
 			}
 
 		}
@@ -1768,7 +1783,7 @@
 	}
 
 		.main > .content {
-			width: 45em;
+			width: 50em;
 			max-width: calc(100% - 4em);
 			margin: 0 auto;
 		}
@@ -1878,14 +1893,15 @@
 
 			.main.style3 .content > header {
 				margin-bottom: 2em;
+				color: rgb(249,249,255);
 			}
 
 			.main.style3.primary {
-				background: #ffffff;
+				background: #5e42a6;
 			}
 
 			.main.style3.secondary {
-				background: #f5f6f7;
+				background: #21b2a6;
 			}
 
 		.main.dark {
@@ -1991,57 +2007,14 @@
 
 		}
 
-/* Footer */
-
-	#footer {
-		position: relative;
-		height: 5em;
-		line-height: 5em;
-		margin: 0;
-		background: #39454b;
-		color: rgba(185, 186, 187, 0.5);
-		overflow: hidden;
-	}
-
-		#footer a {
-			color: inherit;
-		}
-
-			#footer a:hover {
-				color: #b9babb;
-			}
-
-		#footer ul.actions {
-			position: absolute;
-			left: 1em;
-			top: 0.25em;
-			height: 5em;
-			line-height: 5em;
-			margin: 0;
-		}
-
-			#footer ul.actions li {
-				font-size: 1.25em;
+		ul.actions li {
+				font-size: 2em;
 				margin: 0;
 			}
 
-				#footer ul.actions li a {
+			ul.actions li a {
 					padding: 0.5em;
 				}
-
-		#footer ul.menu {
-			position: absolute;
-			right: 2em;
-			top: 0;
-			height: 5em;
-			line-height: 5em;
-			margin: 0;
-		}
-
-			#footer ul.menu li {
-				border-left-color: rgba(185, 186, 187, 0.2);
-				font-size: 0.9em;
-			}
 
 		@media screen and (max-width: 1000px) {
 
@@ -2093,17 +2066,23 @@
 /* Intro */
 
 	#intro {
-		background: url("images/overlay.png"), url("../../images/intro.jpg");
+		background: url("images/overlay.png"), url("http://res.cloudinary.com/dbsxgncvx/image/upload/v1481600791/12339637_10101054045715919_1357706933778548031_o_fgnmrj.jpg");
 		background-size: 256px 256px, cover;
 		background-attachment: fixed, fixed;
 		background-position: top left, bottom center;
 		background-repeat: repeat, no-repeat;
+		text-shadow: 0 3px 2px darkslategray;
+	}
+
+	#subtitle {
+		font-size: 28px;
+		text-shadow: 0 1px 1px darkslategray;
 	}
 
 /* One */
 
 	#one {
-		background: url("images/overlay.png"), url("../../images/one.jpg");
+		background: url("images/overlay.png"), url("https://res.cloudinary.com/dbsxgncvx/image/upload/v1481609459/10010280_10151958090137703_6886071540122930963_o_xjjdku.jpg");
 		background-size: 256px 256px, cover;
 		background-attachment: fixed, fixed;
 		background-position: top left, center center;
@@ -2122,7 +2101,7 @@
 
 	#contact {
 		overflow: hidden;
-		padding-bottom: 0;
+		padding-bottom: 50px;
 	}
 
 		#contact .box {
