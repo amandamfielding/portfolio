@@ -1,9 +1,3 @@
-/*
-	Big Picture by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/
-
 (function($) {
 
 	skel.breakpoints({
@@ -23,13 +17,13 @@
 			$all = $body.add($header);
 
 		// Disable animations/transitions until the page has loaded.
-			$body.addClass('is-loading');
+			// $body.addClass('is-loading');
 
-			$window.on('load', function() {
-				window.setTimeout(function() {
-					$body.removeClass('is-loading');
-				}, 0);
-			});
+			// $window.on('load', function() {
+			// 	window.setTimeout(function() {
+			// 		$body.removeClass('is-loading');
+			// 	}, 0);
+			// });
 
 		// Touch mode.
 			skel.on('change', function() {
@@ -91,18 +85,18 @@
 
 				var $gallery = $('.gallery');
 
-				$gallery.poptrox({
-					baseZIndex: 10001,
-					useBodyOverflow: false,
-					usePopupEasyClose: false,
-					overlayColor: '#1f2328',
-					overlayOpacity: 0.65,
-					usePopupDefaultStyling: false,
-					usePopupCaption: true,
-					popupLoaderText: '',
-					windowMargin: 50,
-					usePopupNav: true
-				});
+				// $gallery.poptrox({
+				// 	baseZIndex: 10001,
+				// 	useBodyOverflow: false,
+				// 	usePopupEasyClose: false,
+				// 	overlayColor: '#1f2328',
+				// 	overlayOpacity: 0.65,
+				// 	usePopupDefaultStyling: false,
+				// 	// usePopupCaption: true,
+				// 	// popupLoaderText: '',
+				// 	windowMargin: 50,
+				// 	usePopupNav: true
+				// });
 
 				// Hack: Adjust margins when 'small' activates.
 					skel
