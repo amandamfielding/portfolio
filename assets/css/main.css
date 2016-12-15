@@ -2104,3 +2104,11 @@
 			width: 10%;
     	height: 10%;
 		}
+
+		#about-me {
+			font-size: 1.7em;
+		}
+
+		#about-blurb {
+			font-size: 16px;
+		}
